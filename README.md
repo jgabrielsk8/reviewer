@@ -1,4 +1,4 @@
-# Reviewit
+# Conding Challenge
 
 ## How to run this app (Docker)
 
