@@ -1,0 +1,29 @@
+FROM python:3.5.2
+
+MAINTAINER Jose Gabriel Giron <jgabrielsk8@gmail.com>
+
+RUN apt-get update && apt-get install -y \
+	git \
+	nginx \
+	supervisor \
+  && rm -rf /var/lib/apt/lists/*
+
+RUN easy_install pip
+
+RUN pip install uwsgi
+
+RUN echo "daemon off;" >> /etc/nginx/nginx.conf
+
+COPY docker-prod-conf/nginx-app.conf /etc/nginx/sites-available/default
+
+COPY docker-prod-conf/supervisor-app.conf /etc/supervisor/conf.d/
+
+ENV INSTALL_PATH /home/code/reviewer
+WORKDIR $INSTALL_PATH
+
+COPY . .
+
+EXPOSE 80
+
+RUN chmod +x entrypoint-prod.sh
+ENTRYPOINT $INSTALL_PATH'/entrypoint-prod.sh'

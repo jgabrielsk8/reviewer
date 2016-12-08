@@ -1,0 +1,17 @@
+ version: '2'
+ services:
+   db_prod:
+     image: postgres
+     volumes:
+      - ../postgres_data_prod:/var/lib/postgres/data
+   web_prod:
+     build:
+      context: .
+      dockerfile: Dockerfile-prod
+     volumes:
+       - .:/home/code/reviewer
+       - ../static_prod:/home/code/volatile
+     ports:
+       - "80:80"
+     depends_on:
+       - db_prod
