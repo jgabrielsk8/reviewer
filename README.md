@@ -14,7 +14,9 @@ If you get this message:
 
 docker is not running.
 
-If not go inside the project and run `docker-compose -f docker-compose-prod.yml up`
+If not, go inside the project and run `docker-compose -f docker-compose-prod.yml up`
+The first time will take a while, docker is downloading everything he needs to run the project, be patient.
+
 ## How to hit the endpoints
 
 `curl -X POST -d "username={username}&password={password}&email={email}" http://127.0.0.1/core/users/`
