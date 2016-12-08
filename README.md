@@ -1,4 +1,4 @@
-# reviewit
+# Reviewit
 
 ## How to run this app (Docker)
 
@@ -8,11 +8,11 @@ Documentation about Docker can be found [here](https://docs.docker.com/)
 
 Check you have docker installed and running by running this command `docker info`
 
-If you get this message docker
+If you get this message:
 
 *[Error response from daemon: Bad response from Docker engine]*
 
-is not running.
+docker is not running.
 
 If not go inside the project and run `docker-compose -f docker-compose-prod.yml up`
 ## How to hit the endpoints
@@ -29,4 +29,13 @@ If not go inside the project and run `docker-compose -f docker-compose-prod.yml 
 
 `docker exec -it reviewer_web_prod_1 python manage.py test --settings=reviewer.test`
 
+## Checking the admin interface
 
+When docker is first runned a superuser is created (only if there is no other) you can access
+
+the admin site with this credentials:
+
+```
+username: admin
+password: AdminPWD
+```
