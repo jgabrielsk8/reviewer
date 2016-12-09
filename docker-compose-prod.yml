@@ -10,7 +10,7 @@
       dockerfile: Dockerfile-prod
      volumes:
        - .:/home/code/reviewer
-       - ../static_prod:/home/code/volatile
+       - ../static_prod:/home/code/static
      ports:
        - "80:80"
      depends_on:
