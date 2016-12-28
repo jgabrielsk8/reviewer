@@ -3,7 +3,7 @@
    db_prod:
      image: postgres
      volumes:
-      - ../postgres_data_prod:/var/lib/postgres/data
+      - ../postgres_data_prod:/var/lib/postgresql/data
    web_prod:
      build:
       context: .
