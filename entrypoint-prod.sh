@@ -1,6 +1,5 @@
 #!/bin/bash
 
-# Test in codeship
 # Run requirements
 echo "Run requirements"
 pip install -r requirements.txt
