@@ -30,7 +30,7 @@ The first time will take a while, docker is downloading everything he needs to r
 
 **Post some reviews**
 
-`curl -H 'Authorization: Token {token}' -X POST -d "company={company_id}&title={title}&summary={summary}&rating={rating}" http://127.0.0.1:8000/reviews/list/`
+`curl -H 'Authorization: Token {token}' -X POST -d "company={company_id}&title={title}&summary={summary}&rating={rating}" http://127.0.0.1/reviews/list/`
 
 
 **Retrieve reviews**
