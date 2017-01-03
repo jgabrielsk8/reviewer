@@ -20,7 +20,7 @@ class DisableMigrations(object):
         return 'notmigrations'
 
 
-MIGRATION_MODULES = DisableMigrations()
+# MIGRATION_MODULES = DisableMigrations()
 
 # For fast tests
 PASSWORD_HASHERS = (
