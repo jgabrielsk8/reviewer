@@ -1,5 +1,7 @@
 # Reviewer
 
+https://codeship.com/projects/3765cfe0-b40f-0134-3d2c-7a9f054dc826/status?branch=master
+
 ## How to run this app (Docker)
 
 To run this project you need to have Docker installed, you can get it from [here](https://www.docker.com/products/docker/)
