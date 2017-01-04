@@ -1,6 +1,6 @@
 # Reviewer
 
-<img src="https://circleci.com/gh/jgabrielsk8/reviewer.svg?style=svg" />
+<img src="https://circleci.com/gh/jgabrielsk8/reviewer/tree/master.svg?style=svg" />
 
 ## How to run this app (Docker)
 
