@@ -7,12 +7,12 @@ hooks:
   ApplicationStop:
     - location: scripts/stop.sh
       timeout: 20
-      runas: ec2-user
+      runas: root
   AfterInstall:
     - location: scripts/build.sh
       timeout: 20
-      runas: ec2-user
+      runas: root
   ApplicationStart:
     - location: scripts/start.sh
       timeout: 20
-      runas: ec2-user
+      runas: root
