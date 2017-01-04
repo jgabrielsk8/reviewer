@@ -1,6 +1,6 @@
 # Reviewer
 
-<img src="https://codeship.com/projects/3765cfe0-b40f-0134-3d2c-7a9f054dc826/status?branch=master" />
+<img src="https://circleci.com/gh/jgabrielsk8/reviewer/tree/master.svg?style=svg" />
 
 ## How to run this app (Docker)
 
