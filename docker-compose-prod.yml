@@ -2,12 +2,14 @@
  services:
    db_prod:
      image: postgres
+     cpu_shares: 100
+     mem_limit: 524288000
      volumes:
       - ../postgres_data_prod:/var/lib/postgresql/data
    web_prod:
-     build:
-      context: .
-      dockerfile: Dockerfile-prod
+     image: 776613661632.dkr.ecr.us-west-2.amazonaws.com/reviewer
+     cpu_shares: 100
+     mem_limit: 524288000
      volumes:
        - .:/home/code/reviewer
        - ../static_prod:/home/code/static
