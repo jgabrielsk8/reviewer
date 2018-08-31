@@ -1,7 +1,5 @@
 # Reviewer
 
-<img src="https://circleci.com/gh/jgabrielsk8/reviewer/tree/master.svg?style=svg" />
-
 
 ## About this project
 
