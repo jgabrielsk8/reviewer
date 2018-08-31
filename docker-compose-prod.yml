@@ -7,13 +7,15 @@
      volumes:
       - ../postgres_data_prod:/var/lib/postgresql/data
    web_prod:
-     image: 776613661632.dkr.ecr.us-west-2.amazonaws.com/reviewer
+     build:
+      context: .
+      dockerfile: Dockerfile-prod
      cpu_shares: 100
      mem_limit: 524288000
      volumes:
        - .:/home/code/reviewer
        - ../static_prod:/home/code/static
      ports:
-       - "80:80"
+       - "8000:80"
      depends_on:
        - db_prod

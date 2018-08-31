@@ -13,8 +13,12 @@ echo "Apply database migrations"
 python manage.py migrate
 
 # Add super user
-echo "Apply database migrations"
+echo "Apply creating super user"
 python manage.py add_superuser
+
+# Add company
+echo "Apply creating first company"
+python manage.py add_company
 
 # Start server
 echo "Starting server"
